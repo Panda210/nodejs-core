@@ -1,4 +1,4 @@
-#nodeJs的微服务项目
+# nodeJs的微服务项目
 
 ## 本地启动
 请自行将config中相关配置信息补充完善，后可执行如下命令：` npm install`编译完成，执行 ` npm run dev` 启动项目。
@@ -16,7 +16,7 @@
 
 配合package.json中scripts，服务器上采用Dockerfile进行部署。
 
-##上传文件到OSS，支持多个配置
+## 上传文件到OSS，支持多个配置
 
 ossConfig是上传文件的相关OSS的配置信息。可以支持不同aliyun oss配置。
 
@@ -48,7 +48,7 @@ ossConfig是上传文件的相关OSS的配置信息。可以支持不同aliyun o
     }
   }`
 
-##文件上传功能
+## 文件上传功能
 访问：`/file/uploadFile`，按照要求传递参数。其中 ossConfigKey对应配置文件ossConfig中的config_1,config_2。 ossPath可不填写，不填写会直接获取配置文件filedir，文件会上传到该目录；如果上传目录需要更换，可传入具体参数值。
 
 |参数            | 类型           | 示例                  |是否必填      |
